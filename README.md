@@ -1,0 +1,2 @@
+# scripts
+bash shell scripting
