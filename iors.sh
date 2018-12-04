@@ -2,9 +2,10 @@
 
 arg=$1
 
-if [ grep "$arg" [[:alpha:]]* ] ; then
+if [[ $arg = *[!0-9]* ]]
+ then
     echo "this is a string"
-elif [ grep "$arg" [[:digit:]]* ] 
+else 
     echo "this is a number"
 fi
 
